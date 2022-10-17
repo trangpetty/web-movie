@@ -1,0 +1,64 @@
+#content {
+    padding: 40px 80px;
+}
+
+.list-poster {
+    list-style-type: none;
+    display: block;
+}
+
+.poster-movie {
+    width: calc((100% - 100px)/5);
+    margin-right: 16px;
+    margin-bottom: 24px;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.movie-name {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    #content {
+        padding: 20px 20px 20px 44px;
+    }
+    .poster-movie {
+        width: calc((100% - 48px)/2);
+    }
+    .movie-name {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #content {
+        padding: 20px 20px 20px 32px;
+    }
+    .poster-movie {
+        width: calc((100% - 37px)/2);
+    }
+    .movie-name {
+        font-size: 13px;
+    }
+}
+
+/* WATCH */
+.input-comments input,
+  .list-comment .comments {
+      outline: none;
+      padding: 8px 16px;
+      border-radius: 18px ;
+      background-color: rgba(0,0,0,0.1);
+      }
+  
+  .handle-cmt {
+    font-size : 13px;
+    font-weight: 700;
+  }
+  .handle-cmt:hover {
+      color: #000;
+      text-decoration: underline;
+  }
+

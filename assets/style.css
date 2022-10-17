@@ -1,0 +1,330 @@
+body {
+    color: rgba(0,0,0,0.7);
+    font-family: InspireTWDC, AvenirNext, Matterhorn, Helvetica, sans-serif;
+}
+
+#navbar {
+    z-index: 1;
+    padding: 20px 56px;
+}
+
+#sign-in {
+    padding: 7px 17px;
+    font-size: 14px;
+}
+
+#img-header {
+    width: 100%;
+    height: 700px;
+}
+
+.bg {
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(0deg,transparent 50%,rgba(0,0,0,.6)),radial-gradient(50% 100%,transparent 0,rgba(0,0,0,.6) 100%);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#text-header {
+    padding: 28px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 20%;
+    color: #fff;
+}
+
+.text-desc-header {
+    width: 50%;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.text-under-header,
+.text-welcome {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+.text-welcome {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.select-language {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon-select {
+    position: absolute;
+    font-size: 12px;
+    padding-left: 8px;
+    padding-top: 0.2% ;
+}
+
+#select {
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 8px 22px;
+    font-size: 16px;
+}
+
+.add-btn {
+    background-color: #e50;
+    background-image: linear-gradient(180deg,#e50914,#db0510);
+    min-height: 40px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0 26px;
+    font-size: 26px;
+}
+
+.add-btn:hover {
+    background-color: #e52;
+    cursor: pointer;
+}
+
+.chervon-icon {
+    font-size: 10px;
+    padding-top: 2px;
+    margin-left: 8px;
+}
+
+.form-email {
+    flex-direction: row;
+}
+
+.input-email {
+    width: 450px;
+    height: 60px;
+    color: #000;
+    padding: 0 12px;
+}
+
+.label-input {
+    color: #8c8c8c;
+    font-size: 16px;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    transition: font-size .1s ease,top .1s ease,transform .1s ease, font-weight .1 ease;
+}
+
+input.input-email:valid ~ label,
+input.input-email:focus ~ label 
+{   top: 10px;
+    transform: translateY(-50%);
+    font-size: 10px;
+    font-weight: 700;
+}
+.input-email:focus {
+    outline: none;
+}
+#about {
+    padding: 76px;
+    position: relative;
+}
+.text-poster {
+    padding: 20px;
+}
+.trending {
+    padding: 40px 76px;
+}
+.more-movie,
+.coming-soon {
+    padding: 32px 76px;
+    background-color:#f1f2f3;
+}
+
+@media screen and (max-width: 768px){  
+    #img-header {
+        height: 600px;
+    }
+    #navbar {
+        padding: 20px 30px;
+    }  
+
+    #sign-in {
+        padding: 7px 17px;
+        font-size: 14px;
+    }
+    
+    #img-header {
+        height: 550px;
+    }
+
+    .select-language {
+        margin-right: 12px;
+    }
+        
+    #select {
+        padding: 8px 22px;
+    }
+    
+    .add-btn {
+        padding: 0;
+        font-size: 14px;
+        width: 20%;
+        margin: 10px auto;
+    }
+    
+    #text-header {
+        padding: 100px 28px;
+    }
+    
+    .text-desc-header {
+        width: 100%;
+        font-size: 28px;
+        max-width: 640px;
+    }
+    
+    .text-under-header,
+    .text-welcome {
+        font-size: 20px;
+    }
+
+    .text-welcome {
+        width: 100%;
+    }
+
+    .form-email {
+        flex-direction: column;
+    }
+
+    .input-email {
+        width: 72%;
+        height: 50px;
+    }
+    .label-input {
+        left: 15%;
+    }
+    #about {
+        padding: 40px;
+    }
+    .text-poster {
+        padding: 12px;
+    }
+    .col {
+        margin-bottom: 16px;
+    }
+    .trending {
+        padding: 20px 40px;
+    }
+    .more-movie,
+    .coming-soon {
+        padding: 32px 56px;
+    }
+}
+
+@media screen and (max-width: 376px){  
+    #navbar {
+        padding: 8px 16px;
+    }  
+
+    #sign-in {
+        padding: 4px;
+        font-size: 14px;
+    }
+    
+    #img-header {
+        height: 500px;
+        width: 100%;
+    }
+
+    .select-language {
+        margin-right: 10px;
+    }
+        
+    #select {
+        padding: 4px 16px;
+    }
+    
+    .add-btn {
+        padding: 0;
+        width: 40%;
+        font-size: 14px;
+        margin: 10px auto;
+    }
+    
+    #text-header {
+        padding: 60px 10px;
+    }
+    
+    .text-desc-header {
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    .text-under-header,
+    .text-welcome {
+        font-size: 16px;
+    }
+
+    .text-welcome {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .input-email {
+        width: 90%;
+        height: 40px;
+    }
+
+    .label-input {
+        font-size: 12px;
+        left: 18%;
+    }
+    #about,
+    .trending {
+        padding: 32px 20px;
+    }
+    .text-poster {
+        padding: 12px;
+    }
+    .col {
+        margin-bottom: 16px;
+    }
+    
+    .more-movie,
+    .coming-soon {
+        padding: 20px 40px;
+    }
+} 
+
+img.touch {
+    transition: transform 0.3s ease;
+}
+
+img.touch:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    
+    width: 80px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: 80px 33px;
+    margin: 0 auto;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+
+/* MOVIE */
